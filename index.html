@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIK339 - Labb 1</title>
+    <!-- REFLEKTION UPPGIFT 1:
+    1\. Betydelse av <script>-taqggens placering:
+        Webbläsaren tolkar och parsar HTML-dokumentet uppifrån och ned. 
+        Om en vanlig <script>-placeras i <head> utan specialla attribut 
+        pausas HTML-parsingen medan scriptet laddas ner och exekveras. 
+        Om scriptet försöker manipulera DOM-element som ännu inte har laddats
+        kan det orsaka fel. Därför är det standardpraxis antingen att placera
+        script.taggen längst ned i <body> eller i <head> med "defer"-atributet.
+        
+        2. Hur atributet 'defer' fungerar:
+        När'defer' läggs till på en extern script-tagg i <head< laddas JavaScript-filen ner 
+        asynkront och parallellt me att webbläsaren bygger DOM-trädet.
+        Själva exekveringen av koden skjuts dock upp tills hela HTML-dokumentet är färdigparsat.
+        Script med 'defer' garanterar också att de körs i den ordningen de anges i dokumentet.
+          -->
+    <!-- Koppling via <head> med 'defer'-attributet enligt best practices -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>GIK339 – Labb 1: JavaScript intro, variabler och funktioner</h1> 
+    <p>Öppna webbläsarens DevTools (F12 eller Högerklick -> Inspect) och titta i konsolen för att se utskrifterna.</p>
+</body>
+</html>
